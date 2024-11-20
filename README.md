@@ -1,31 +1,40 @@
-Mini Loan App
-The Mini Loan App is a full-stack application designed to manage loan processing and repayments. This project includes user authentication, loan creation, viewing loans, and repayment handling. It utilizes MongoDB Compass, Express.js, React.js, and tools like Postman for API testing.
+# Mini Loan App
 
-Features
-User authentication using JWT (JSON Web Tokens).
-Loan creation with scheduled repayments.
-Viewing all loans for a specific user.
-Adding repayments to loans and marking installments as paid.
-Admin functionality for approving loans.
+The **Mini Loan App** is a full-stack application designed to manage loan processing and repayments. This project includes user authentication, loan creation, viewing loans, and repayment handling. It utilizes MongoDB Compass, Express.js, React.js, and tools like Postman for API testing.
 
-Table of Contents
-Technologies Used
-Frontend Development
-Backend Development
-Database Setup
-API Endpoints
-How to Run
-Screenshots
+## Features
 
-Technologies Used
-Frontend: React.js, Axios, CSS
-Backend: Node.js, Express.js, JWT
-Database: MongoDB (MongoDB Compass)
-Tools: Postman, MongoDB Compass, Git
+- User authentication using **JWT** (JSON Web Tokens).
+- Loan creation with scheduled repayments.
+- Viewing all loans for a specific user.
+- Adding repayments to loans and marking installments as paid.
+- Admin functionality for approving loans.
 
-Frontend Development
-1. Setup React App
-Initialized a React app using: npx create-react-app mini-loan-app
+## Table of Contents
+
+1. [Technologies Used](#technologies-used)
+2. [Frontend Development](#frontend-development)
+3. [Backend Development](#backend-development)
+4. [Database Setup](#database-setup)
+5. [API Endpoints](#api-endpoints)
+6. [How to Run](#how-to-run)
+7. [Screenshots](#screenshots)
+
+## Technologies Used
+
+- **Frontend**: React.js, Axios, CSS
+- **Backend**: Node.js, Express.js, JWT
+- **Database**: MongoDB (MongoDB Atlas/Compass)
+- **Tools**: Postman, MongoDB Compass, Git
+
+## Frontend Development
+
+### 1. Setup React App
+
+- Initialized a React app using:
+  ```bash
+  npx create-react-app mini-loan-app
+
 Created essential components:
 Login.js: For user authentication.
 LoanRequest.js: For requesting loans.
@@ -34,7 +43,7 @@ Configured React Router for navigation.
 2. Login Page
 Built a Login Page that collects user credentials and authenticates them with the backend.
 
-![Login Page](images/frontend_login.png)
+![Login Page](frontend/images/frontend_login.png)
 
 Backend Development
 1. Setting Up the Environment
@@ -49,7 +58,7 @@ User Authentication
 Implemented user registration and login routes with password hashing using bcryptjs.
 Generated JWT tokens for authenticated access to protected routes.
 
-![MongoDB Compass - Users Collection](images/mongodb_users.png)
+![MongoDB Compass - Users Collection](frontend/images/mongodb_users.png)
 
 3. Loan Management
 Created routes for:
@@ -66,10 +75,6 @@ Created collections:
 users: To store user credentials.
 loans: To store loan details and repayment schedules.
 repayments: To track individual repayments.
-Insert MongoDB Compass Loans Image Here
-Add a screenshot of the loans collection in MongoDB Compass.
-
-![MongoDB Compass - Loans Collection](images/mongodb_loans.png)
 
 API Endpoints
 Method	Endpoint	Description
@@ -81,15 +86,12 @@ PUT	/api/loan/:id/approve	Approve a loan (admin only).
 POST	/api/repayment	Add a repayment to a loan.
 
 Sample Requests
-Insert Postman Screenshot for Register/Login
-Place Postman screenshots for user registration or login request.
 
-![Postman - Register/Login Request](images/postman_register_login.png)
+![Postman - Register/Login Request](frontend/images/postman_register_login.png)
 
-Insert Postman Screenshot for Loan Creation
-Place a screenshot for a POST /api/loan request in Postman.
 
-![Postman - Loan Creation](images/postman_loan_creation.png)
+
+![Postman - Loan Creation](frontend/images/postman_loan_creation.png)
 
 How to Run
 1. Clone the Repository
